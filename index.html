@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mi CV</title>
+    <link rel="stylesheet" href="css/estilos.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="header-container">
+        <div class="profile-image">
+          <img src="imagenes/fotoperfil.jpg" alt="Imagen de perfil" />
+        </div>
+        <div class="profile-info">
+          <h1>Jhon Buttler</h1>
+          <h2>Programador</h2>
+        </div>
+        <div class="nav">
+          <a href="#personalinfo"><i class="fas fa-user"></i> Info personal</a>
+          <a href="#education"><i class="fas fa-briefcase"></i> Experiencia</a>
+          <a href="#experience"><i class="fas fa-graduation-cap"></i> Educación</a>
+          <a href="#skills"><i class="fas fa-code"></i> Skills</a>
+          <a href="descargas/Cv.pdf" download target="_blank">
+        <i class="fas fa-download"></i> Descargar Cv</a>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section id="personalinfo">
+        <h3>Sobre mí</h3>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing. Lorem ipsum dolor
+          sit amet consectetur adipisicing elit. Voluptate, suscipit veniam!
+          Numquam sed quo eligendi commodi quibusdam vitae repudiandae animi
+          dolores, vero, amet perferendis minima ipsa libero error! Reiciendis,
+          veritatis.
+        </p>
+      </section>
+      <section id="experience">
+        <h3>Experiencia laboral</h3>
+        <ul>
+          <li>
+            <i class="fas fa-briefcase"></i>
+            <h4>Acme Corporation</h4>
+            <h5>Desarrollador web</h5>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem
+              quidem laboriosam maiores ipsum veniam, sed natus? Eligendi ullam
+              tempora enim neque vel recusandae provident eius, exercitationem,
+              unde doloremque eaque incidunt!.
+            </p>
+          </li>
+          <li>
+            <i class="fas fa-briefcase"></i>
+            <h4>Beta Technologies</h4>
+            <h5>Ingeniero de software</h5>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem
+              quidem laboriosam maiores ipsum veniam, sed natus? Eligendi ullam
+              tempora enim neque vel recusandae provident eius, exercitationem,
+              unde doloremque eaque incidunt!.
+            </p>
+          </li>
+        </ul>
+      </section>
+      <section id="education">
+        <h3>Educación</h3>
+        <ul>
+          <li>
+            <i class="fas fa-graduation-cap"></i>
+            <h4>Universidad Nacional</h4>
+            <h5>Bachiller en Ciencias de la Computación</h5>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem
+              quidem laboriosam maiores ipsum veniam, sed natus? Eligendi ullam
+              tempora enim neque vel recusandae provident eius, exercitationem,
+              unde doloremque eaque incidunt!.
+            </p>
+          </li>
+
+          <i class="fas fa-graduation-cap"></i>
+          <h4>Platzi</h4>
+          <h5>Diplomado en Desarrollo Web</h5>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem
+            quidem laboriosam maiores ipsum veniam, sed natus? Eligendi ullam
+            tempora enim neque vel recusandae provident eius, exercitationem,
+            unde doloremque eaque incidunt!.
+          </p>
+        </ul>
+      </section>
+      <section id="skills">
+        <h3>Habilidades</h3>
+        <ul>
+          <li><i class="fab fa-js"></i> JavaScript</li>
+          <li><i class="fab fa-html5"></i> HTML</li>
+          <li><i class="fab fa-css3-alt"></i> CSS</li>
+          <li><i class="fas fa-database"></i> SQL Server</li>
+          <li><i class="fab fa-ajax"></i> AJAX</li>
+        </ul>
+      </section>
+
+      <div class="contact_form">
+        <div class="formulario">
+          <h2>Formulario de contacto</h2>
+          <h3>Escríbenos y en breve nos pondremos en contacto contigo</h3>
+
+          <form action="submeter-formulario.php" method="post">
+            <p>
+              <label for="nombre" class="colocar_nombre"
+                >Nombre
+                <span class="obligatorio">*</span>
+              </label>
+              <input
+                type="text"
+                name="introducir_nombre"
+                id="nombre"
+                required="obligatorio"
+                placeholder="Escribe tu nombre"
+              />
+            </p>
+
+            <p>
+              <label for="email" class="colocar_email"
+                >Email
+                <span class="obligatorio">*</span>
+              </label>
+              <input
+                type="email"
+                name="introducir_email"
+                id="email"
+                required="obligatorio"
+                placeholder="Escribe tu Email"
+              />
+            </p>
+
+            <p>
+              <label for="telefone" class="colocar_telefono">Teléfono </label>
+              <input
+                type="tel"
+                name="introducir_telefono"
+                id="telefono"
+                placeholder="Escribe tu teléfono"
+              />
+            </p>
+
+            <p>
+              <label for="asunto" class="colocar_asunto"
+                >Asunto
+                <span class="obligatorio">*</span>
+              </label>
+              <input
+                type="text"
+                name="introducir_asunto"
+                id="assunto"
+                required="obligatorio"
+                placeholder="Escribe un asunto"
+              />
+            </p>
+
+            <p>
+              <label for="mensaje" class="colocar_mensaje"
+                >Mensaje
+                <span class="obligatorio">*</span>
+              </label>
+              <textarea
+                name="introducir_mensaje"
+                class="texto_mensaje"
+                id="mensaje"
+                required="obligatorio"
+                placeholder="Deja aquí tu comentario..."
+              ></textarea>
+            </p>
+
+            <button type="submit" name="enviar_formulario" id="enviar">
+              <p>Enviar</p>
+            </button>
+
+            <p class="aviso">
+              <span class="obligatorio"> * </span>los campos son obligatorios.
+            </p>
+          </form>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <ul>
+        <li>
+          <a href="https://www.linkedin.com/"
+            ><i class="fab fa-linkedin-in"></i> LinkedIn</a
+          >
+        </li>
+        <li>
+          <a href="https://github.com/"><i class="fab fa-github"></i> GitHub</a>
+        </li>
+        <li>
+          <a href="https://twitter.com/"
+            ><i class="fab fa-twitter"></i> Twitter</a
+          >
+        </li>
+      </ul>
+
+      <button id="subir-btn">Subir</button>
+      <script src="js/script.js"></script>
+    </footer>
+  </body>
+</html>
